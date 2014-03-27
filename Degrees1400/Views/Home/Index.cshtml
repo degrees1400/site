@@ -38,7 +38,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="qccore.css">
-<link rel="stylesheet" href="animation.css">
 <script src="modernizr.custom.90667.js"></script>
 </head>
 <body>
@@ -51,18 +50,6 @@
 
 <section id="hero">
 	<article id="da-slider" class="da-slider">
-		<div class="da-slide slide1">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Michelle Stern</a>
-		</div>
-		<div class="da-slide slide2">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Scotty Terrell</a>
-		</div>
-		<div class="da-slide slide3">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Andy Schubert</a>
-		</div>
 	</article>
 	<article id="overlay">
 		<h1>Curated packages from people you care about</h1>
@@ -148,64 +135,62 @@ if (typeof jQuery == 'undefined') {
 </script>
 <script src="jquery.cslider.js"></script>
 <script>
-$.getJSON('qcdata.json', function(data) {
+    $.getJSON('qcdata.json', function (data) {
 
-var mystyles = '';
-var myheros = '';
-var mycameos = '';
-var ncount = 0;
+        var myherostyles = '';
+        var myheros = '';
+        var mycameostyles = '';
+        var mycameos = '';
+        var ncount = 0;
+        var pcount = 0;
 
-	$(data.curators).each(function() {
+        $(data.curators).each(function () {
 
-		if(this.type == "hero"){
-			ncount++;
-			mystyles += '.slide'+ncount+' {background-image:url('+ this.image +');}\n';
+            if (this.type == "hero") {
+                ncount++;
+                myherostyles += '.slide' + ncount + ' {background-image:url(' + this.image + ');}\n';
 
-			myheros += '<div class="da-slide slide'+ncount+'">';
-			myheros += '<div class="overlay"></div>';
-			myheros += '<a href="'+ this.targeturl +'" class="da-link">'+ this.curatorname +'</a>';
-			myheros += '</div>';
+                myheros += '<div class="da-slide slide' + ncount + '">';
+                myheros += '<div class="overlay"></div>';
+                myheros += '<a href="' + this.targeturl + '" class="da-link">' + this.curatorname + '</a>';
+                myheros += '</div>';
 
-		}
-		else if(this.type == "cameo"){
+            }
+            else if (this.type == "cameo") {
+                pcount++;
+                mycameostyles += '.cameo' + pcount + ' a {background-image:url(images/cameos/cameo-sprite.png);}\n';
 
-			mycameos += '<li>';
-			mycameos += '<a href="'+ this.targeturl +'">';
-			mycameos += '<img src="'+ this.image +'" alt="'+ this.title +'">';
-			mycameos += '<span class="title">'+ this.curatorname +'</span>';
-			mycameos += '<span class="subtitle">'+ this.curatortitle +'</span>';
-			mycameos += '</a>';
-			mycameos += '</li>';
-	
-		}
+                mycameos += '<li class="cameo cameo' + pcount + '">';
+                mycameos += '<a href="' + this.targeturl + '">';
+                mycameos += '<span class="title">' + this.curatorname + '</span>';
+                mycameos += '<span class="subtitle">' + this.curatortitle + '</span>';
+                mycameos += '</a>';
+                mycameos += '</li>';
 
-	});
+            }
 
-	$(".addons").append(mystyles);
-	$(".da-slider").html(myheros);	
-	$(".cameos").append(mycameos);
+        });
 
-	$('#da-slider').cslider({
-		autoplay	: true,
-		bgincrement	: 450
-	});
-	
-	$("#Submit").click(function () {
-	    $("#ScrollPositionX").val($(document).scrollTop());
-	});
+        $(".addons").append(myherostyles);
+        $(".addons").append(mycameostyles);
+        $(".da-slider").html(myheros);
+        $(".cameos").append(mycameos);
 
-	$("#ScrollPositionX").each(function () {
-	    var val = parseInt($(this).val(), 10);
-	    if (!isNaN(val))
-	        $(document).scrollTop(val);
-	});
-});
+        $('#da-slider').cslider({
+            autoplay: true,
+            bgincrement: 450
+        });
+
+    });
 </script>
 <script>
 
 $( "#logo article" ).click(function() {
 window.location.href = "https://quarterly.co/products";
 });
+</script>
+<script>
+$("#signup article input[data-validation-error=true]").after('<span class="exc">!</span>');
 </script>
 
 <script>
@@ -216,9 +201,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-49323129-1', 'quarterly.co');
 ga('send', 'pageview');
-</script>
-<script>
-    $("#signup article input[data-validation-error=true]").after('<span class="exc">!</span>');
 </script>
 </body>
 </html>

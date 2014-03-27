@@ -51,8 +51,8 @@ transition: background-position 1s ease-out 0.3s;
 #collection article{background:#FFFFFF;}
 #collection article h2{}
 #collection article ul{list-style:none; -moz-padding-start:0; text-align:center;}
-#collection article ul li{margin:0 10px 10px 10px; display:inline-block; width:144px; vertical-align:top;}  
-#collection article ul li a{}
+#collection article ul li{margin:0 10px 10px 10px; display:inline-block; width:130px; vertical-align:top;}  
+#collection article ul li a{display:block; height:auto; padding-top:130px; width:130px;}
 #collection article ul li a:hover{color:#516EB1}
 #collection article ul li a img{width:91%; display:block; margin:0 auto; border-radius:100%; border:6px solid #FFFFFF;}
 #collection article ul li a:hover img{border-color:#E67E7A; }
@@ -60,6 +60,16 @@ transition: background-position 1s ease-out 0.3s;
 #collection article ul li a:hover span.title{color:#E67E7A;}
 #collection article ul li a span.subtitle{font-weight:400; color:#999999; text-transform:uppercase; font-size:1.0em; text-align:center; display:block; width: 100%; height:3em;}
 #collection article ul li a:hover span.subtitle{color:#E67E7A;}
+
+.cameo a{background-repeat:no-repeat;}
+
+.cameo1 a{background-position:0px 0px;}
+.cameo2 a{background-position:-140px 0px;}
+.cameo3 a{background-position:-280px 0px;}
+.cameo4 a{background-position:-420px 0px;}
+.cameo5 a{background-position:-560px 0px;}
+.cameo6 a{background-position:-700px 0px;}
+
 
 #howitworks{background:#FFFFFF url(images/works-bg.jpg) repeat 0 0;}
 #howitworks article{background:transparent; padding:2.0em 0;}
@@ -167,4 +177,80 @@ background: #BB0000;
 @media (min-width: 1000px) {
 #howitworks article .theworks a{display:inline-block;}
 .arrowleft, .arrowright{display:inline-block; background:transparent url(images/arrow-horizontal.png) no-repeat 1em 8em; height:17em; width:4em;}
+}
+
+
+/* Animation classes and animations */
+
+/* Slide in from the right*/
+.da-slide-fromright .da-link{
+-webkit-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
+-moz-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
+-o-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
+-ms-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
+animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
+}
+@-webkit-keyframes fromRightAnim3{
+0%{ left: 110%; opacity: 0; }
+1%{ left: 10%; opacity: 0; }
+100%{ left: 10%; opacity: 1; }
+}
+
+@-moz-keyframes fromRightAnim3{
+0%{ left: 110%; opacity: 0; }
+1%{ left: 10%; opacity: 0; }
+100%{ left: 10%; opacity: 1; }
+}
+
+@-o-keyframes fromRightAnim3{
+0%{ left: 110%; opacity: 0; }
+1%{ left: 10%; opacity: 0; }
+100%{ left: 10%; opacity: 1; }
+}
+
+@-ms-keyframes fromRightAnim3{
+0%{ left: 110%; opacity: 0; }
+1%{ left: 10%; opacity: 0; }
+100%{ left: 10%; opacity: 1; }
+}
+
+@keyframes fromRightAnim3{
+0%{ left: 110%; opacity: 0; }
+1%{ left: 10%; opacity: 0; }
+100%{ left: 10%; opacity: 1; }
+}
+
+/* Slide out to the left*/
+
+.da-slide-toleft .da-link{
+-webkit-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
+-moz-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
+-o-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
+-ms-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
+animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
+}
+
+@-webkit-keyframes toLeftAnim3{
+0%{ left: 10%;  opacity: 1; }
+100%{ left: -50%; opacity: 0; }
+}
+
+@-moz-keyframes toLeftAnim3{
+0%{ left: 10%;  opacity: 1; }
+100%{ left: -50%; opacity: 0; }
+}
+
+@-o-keyframes toLeftAnim3{
+0%{ left: 10%;  opacity: 1; }
+100%{ left: -50%; opacity: 0; }
+}
+
+@-ms-keyframes toLeftAnim3{
+0%{ left: 10%;  opacity: 1; }
+100%{ left: -50%; opacity: 0; }
+}
+
+@keyframes toLeftAnim3{
+0%{ left: 10%;  opacity: 1; }
+100%{ left: -50%; opacity: 0; }
 }

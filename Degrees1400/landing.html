@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="qccore.css">
-<link rel="stylesheet" href="animation.css">
 <script src="modernizr.custom.90667.js"></script>
 </head>
 <body>
@@ -19,18 +18,6 @@
 
 <section id="hero">
 	<article id="da-slider" class="da-slider">
-		<div class="da-slide slide1">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Michelle Stern</a>
-		</div>
-		<div class="da-slide slide2">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Scotty Terrell</a>
-		</div>
-		<div class="da-slide slide3">
-			<div class="overlay"></div>
-			<a href="#" class="da-link">Andy Schubert</a>
-		</div>
 	</article>
 	<article id="overlay">
 		<h1>Curated packages from people you care about</h1>
@@ -92,7 +79,7 @@
 		<p>Quarterly is a subscription service that lets people receive physical items in the mail from influential curators of their choice. It's a new way to connect with people you find interesting. <strong>Enter your email address for the latest curators &amp; special offers.</strong></p>
 	<form>
 	<input type="text" placeholder="ENTER EMAIL">
-	<a href="#">I'm in</a>
+	<input type="submit" value="I'm in">
 	</form>
 	</article>
 </section>
@@ -116,16 +103,18 @@ if (typeof jQuery == 'undefined') {
 <script>
 $.getJSON('qcdata.json', function(data) {
 
-var mystyles = '';
+var myherostyles = '';
 var myheros = '';
+var mycameostyles = '';
 var mycameos = '';
 var ncount = 0;
+var pcount = 0;
 
 	$(data.curators).each(function() {
 
 		if(this.type == "hero"){
 			ncount++;
-			mystyles += '.slide'+ncount+' {background-image:url('+ this.image +');}\n';
+			myherostyles += '.slide'+ncount+' {background-image:url('+ this.image +');}\n';
 
 			myheros += '<div class="da-slide slide'+ncount+'">';
 			myheros += '<div class="overlay"></div>';
@@ -134,10 +123,11 @@ var ncount = 0;
 
 		}
 		else if(this.type == "cameo"){
-
-			mycameos += '<li>';
+			pcount++;
+			mycameostyles += '.cameo'+pcount+' a {background-image:url(images/cameos/cameo-sprite.png);}\n';			
+			
+			mycameos += '<li class="cameo cameo'+pcount+'">';
 			mycameos += '<a href="'+ this.targeturl +'">';
-			mycameos += '<img src="'+ this.image +'" alt="'+ this.title +'">';
 			mycameos += '<span class="title">'+ this.curatorname +'</span>';
 			mycameos += '<span class="subtitle">'+ this.curatortitle +'</span>';
 			mycameos += '</a>';
@@ -147,7 +137,8 @@ var ncount = 0;
 
 	});
 
-	$(".addons").append(mystyles);
+	$(".addons").append(myherostyles);
+	$(".addons").append(mycameostyles);
 	$(".da-slider").html(myheros);	
 	$(".cameos").append(mycameos);
 
@@ -163,6 +154,9 @@ var ncount = 0;
 $( "#logo article" ).click(function() {
 window.location.href = "https://quarterly.co/products";
 });
+</script>
+<script>
+$("#signup article input[data-validation-error=true]").after('<span class="exc">!</span>');
 </script>
 
 <script>
