@@ -3,64 +3,64 @@
         {
             "type": "hero",
             "curatorname": "Uprise Art",
-	  "curatortitle": "Tze Chun, Founder",
+            "curatortitle": "Tze Chun, Founder",
             "image": "images/heros/Quarterly_UAQ04_20.jpg",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424511&PluID=0&ord=[timestamp]"
         },
         {
             "type": "hero",
             "curatorname": "Wander",
-	  "curatortitle": "Keenan Cummings & Jeremy Fisher",
+            "curatortitle": "Keenan Cummings & Jeremy Fisher",
             "image": "images/heros/Quarterly_FAR05_01.jpg",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424512&PluID=0&ord=[timestamp]"
         },
         {
             "type": "hero",
             "curatorname": "Alexis Ohanian",
-  	  "curatortitle": "Reddit, Breadpig, Hipmunk",
+            "curatortitle": "Reddit, Breadpig, Hipmunk",
             "image": "images/heros/PIG07_003.jpg",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424519&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Kalani",
-	  "curatortitle": "Wellness Retreat, Cultural Center",
-            "image": "images/cameos/kalani.png",
+            "curatortitle": "Wellness Retreat, Cultural Center",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424510&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Heather Armstrong",
-	  "curatortitle": "Dooce",
-            "image": "images/cameos/heatherarmstrong.png",
+            "curatortitle": "Dooce",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424513&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Sean Bonner",
-	  "curatortitle": "Misanthropologist ",
-            "image": "images/cameos/seanbonner.png",
+            "curatortitle": "Misanthropologist ",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424514&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Mark Frauenfelder",
-	  "curatortitle": "Boing Boing, MAKE",
-            "image": "images/cameos/markfrauenfelder.png",
+            "curatortitle": "Boing Boing, MAKE",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424515&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Chris Guillebeau",
-	  "curatortitle": "The Art of Non-Conformity",
-            "image": "images/cameos/chrisguillebeau.png",
+            "curatortitle": "The Art of Non-Conformity",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424516&PluID=0&ord=[timestamp]"
         },
         {
             "type": "cameo",
             "curatorname": "Dean Karnazes",
-	  "curatortitle": "Ultra-Marathoner, Endurance Athlete",
-            "image": "images/cameos/deankarnazes.png",
+            "curatortitle": "Ultra-Marathoner, Endurance Athlete",
+            "image": "",
             "targeturl": "http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424518&PluID=0&ord=[timestamp]"
         }
     ]

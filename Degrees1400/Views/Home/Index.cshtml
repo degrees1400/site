@@ -72,36 +72,33 @@
 		<h2>How it works</h2>
 <div class="theworks">
 <a class="partone" href="https://quarterly.co/products">
-<img src="images/cards-idle.png" class="idle" alt="Cards-idle">
-<img src="images/cards-hover.png" class="active" alt="Cards-hover">
+		<div class="cards-idle idle"></div>
+		<div class="cards-hover active"></div>
 <hr>
 <p>You choose your favorite<br>cultural icons</p>
 </a>
 
-<div class="arrowleft"></div>
+	<div class="arrow-flow"></div>
 
 <a class="parttwo" href="https://quarterly.co/products">
-<img src="images/assemblage-star.png" class="star" alt="Assemblage-star">
-<img src="images/assemblage-tube.png" class="tube" alt="Assemblage-tube">
-<img src="images/assemblage-ball.png" class="ball" alt="Assemblage-ball">
-<img src="images/assemblage-book.png" class="book" alt="Assemblage-book">
-<img src="images/assemblage-hand.png" class="hand" alt="Assemblage-hand">
+		<div class="assemblage-star"></div>
+		<div class="assemblage-tube"></div>
+		<div class="assemblage-ball"></div>
+		<div class="assemblage-book"></div>
+		<div class="assemblage-hand"></div>
 <hr>
 <p>They curate<br>unique boxes</p>
 </a>
 
-<div class="arrowright"></div>
+	<div class="arrow-flow"></div>
 
 <a class="partthree" href="https://quarterly.co/products">
-<img src="images/package-idle.png" class="idle" alt="Package-idle">
-<img src="images/package-hover.png" class="active" alt="Package-hover">
+		<div class="package-idle idle"></div>
+		<div class="package-hover active"></div>
 <hr>
 <p>You receive handpicked<br>cool stuff</p>
 </a>
-
 </div>
-
-
 	</article>
 </section>
 
@@ -158,10 +155,11 @@ if (typeof jQuery == 'undefined') {
             }
             else if (this.type == "cameo") {
                 pcount++;
-                mycameostyles += '.cameo' + pcount + ' a {background-image:url(images/cameos/cameo-sprite.png);}\n';
+			mycameostyles += '.cameo'+pcount+' a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}\n';			
 
                 mycameos += '<li class="cameo cameo' + pcount + '">';
                 mycameos += '<a href="' + this.targeturl + '">';
+			mycameos += '<span class="medallion"></span>';
                 mycameos += '<span class="title">' + this.curatorname + '</span>';
                 mycameos += '<span class="subtitle">' + this.curatortitle + '</span>';
                 mycameos += '</a>';
