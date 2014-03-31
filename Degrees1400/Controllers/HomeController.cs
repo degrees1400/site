@@ -12,9 +12,27 @@ namespace Degrees1400.Controllers
         //
         // GET: /Home/
 
-        public ActionResult Index()
+        public ActionResult Index(string id)
         {
-            return View(new Email());
+            var model = new CuratorViewModel
+            {
+                Timestamp = (int)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds)
+            };
+
+            var productId = "9424527";
+
+            var mapping = HttpRuntime.Cache["ProductMapping"] as Dictionary<string,string>;
+
+            if(!String.IsNullOrWhiteSpace(id) && mapping != null)
+            {
+                if (mapping.ContainsKey(id))
+                    productId = mapping[id];
+            }
+
+            model.TrackingPixel = String.Format("http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli={0}&PluID=0&ord={1}", productId, model.Timestamp);
+
+
+            return View(model);
         }
 
         [HttpPost]

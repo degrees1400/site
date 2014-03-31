@@ -1,4 +1,4 @@
-﻿@model Degrees1400.Models.Email
+﻿@model Degrees1400.Models.CuratorViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -34,22 +34,23 @@
 <head>
 <title>Online Quarterly Subscription and Gift Services from Quarterly Co.</title>
 <meta charset="utf-8">
+<base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="qccore.css">
+<link rel="stylesheet" href="/qccore.css">
 <!--[if IE 8]>
 <style type="text/css">
 #hero article#overlay h1{background-color:#BBBBBB;}
 .da-slide .da-link{color:#000000;}
 </style>
 <![endif]-->
-<script src="modernizr.custom.63285.js"></script>
+<script src="/modernizr.custom.63285.js"></script>
 </head>
 <body>
 
 <section id="logo">
-	<article onClick="window.location.href = 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]';">
-		<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]" class="qclogo"><img src="images/qclogo2.png" alt="Quarterly Co."></a>
+	<article onClick="fhd_tc('', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')">
+		<a onClick="fhd_tc('', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')" class="qclogo"><img src="images/qclogo2.png" alt="Quarterly Co."></a>
 	</article>
 </section>
 
@@ -59,23 +60,23 @@
 <div class="da-slide slide1">
 <div class="overlay">
 </div>
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424511&amp;PluID=0&amp;ord=[timestamp]" class="da-link">Uprise Art</a>
+<a class="da-link" onclick="fhd_tc('UpriseArt', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424511&amp;PluID=0&amp;ord=@Model.Timestamp')">Uprise Art</a>
 </div>
 <div class="da-slide slide2">
 <div class="overlay">
 </div>
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424512&amp;PluID=0&amp;ord=[timestamp]" class="da-link">Wander</a>
+<a onclick="fhd_tc('Wander', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424512&amp;PluID=0&amp;ord=@Model.Timestamp') class="da-link">Wander</a>
 </div>
 <div class="da-slide slide3">
 <div class="overlay">
 </div>
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424519&amp;PluID=0&amp;ord=[timestamp]" class="da-link">Alexis Ohanian</a>
+<a onclick="fhd_tc('Alexis Ohanian', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424519&amp;PluID=0&amp;ord=@Model.Timestamp')" class="da-link">Alexis Ohanian</a>
 </div>
 
 	</article>
 	<article id="overlay">
 		<h1>Curated packages from people you care about</h1>
-		<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]">Select a Curator</a>
+		<a onclick="fhd_tc('Select Curator', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')">Select a Curator</a>
 	</article>
 </section>
 
@@ -85,42 +86,42 @@
 
 <ul class="cameos">
 <li class="cameo cameo1">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424510&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Kalani', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424510&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Kalani</span>
 <span class="subtitle">Wellness Retreat, Cultural Center</span>
 </a>
 </li>
 <li class="cameo cameo2">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424513&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Dooce', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424513&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Heather Armstrong</span>
 <span class="subtitle">Dooce</span>
 </a>
 </li>
 <li class="cameo cameo3">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424514&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Misanthropologist', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424514&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Sean Bonner</span>
 <span class="subtitle">Misanthropologist</span>
 </a>
 </li>
 <li class="cameo cameo4">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424515&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Boing Boing, Make', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424515&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Mark Frauenfelder</span>
 <span class="subtitle">Boing Boing, MAKE</span>
 </a>
 </li>
 <li class="cameo cameo5">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424516&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Chris Guillebeau', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424516&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Chris Guillebeau</span>
 <span class="subtitle">The Art of Non-Conformity</span>
 </a>
 </li>
 <li class="cameo cameo6">
-<a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424518&amp;PluID=0&amp;ord=[timestamp]">
+<a onclick="fhd_tc('Dean Karnazes', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=9424518&amp;PluID=0&amp;ord=@Model.Timestamp')">
 <span class="medallion"></span>
 <span class="title">Dean Karnazes</span>
 <span class="subtitle">Ultra-Marathoner, Endurance Athlete</span>
@@ -135,7 +136,7 @@
 	<article>
 		<h2>How it works</h2>
 <div class="theworks">
-	<a class="partone" href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]">
+	<a class="partone" onclick="fhd_tc('', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')">
 		<div class="cards-idle idle"></div>
 		<div class="cards-hover active"></div>
 		<hr>
@@ -144,7 +145,7 @@
 
 	<div class="arrow-flow"></div>
 
-	<a class="parttwo" href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]">
+	<a class="parttwo" onclick="fhd_tc('', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')">
 		<div class="assemblage-star"></div>
 		<div class="assemblage-tube"></div>
 		<div class="assemblage-ball"></div>
@@ -156,7 +157,7 @@
 
 	<div class="arrow-flow"></div>
 
-	<a class="partthree" href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=[timestamp]">
+	<a class="partthree" onclick="fhd_tc('', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9424527&PluID=0&ord=@Model.Timestamp')">
 		<div class="package-idle idle"></div>
 		<div class="package-hover active"></div>
 		<hr>
@@ -170,30 +171,33 @@
 	<article>
 		<h2>Sign up</h2>
 		<p>Quarterly is a subscription service that lets people receive physical items in the mail from influential curators of their choice. It's a new way to connect with people you find interesting. <strong>Enter your email address for the latest curators &amp; special offers.</strong></p>
+        
         @using(Html.BeginForm())
         {
             <input type="hidden" id="ScrollPositionX" name="ScrollPositionX" value="@scrollPositionX" />            
 	        <input type="text" placeholder="ENTER EMAIL" id="Address" name="Address" value="@Model.Address" @ModelErrorClass("Address") />
             <input type="submit" value="I'm in" id="Submit" />        
         }
+
 	</article>
 </section>
 
 <section id="footer">
 	<nav>
 		<ul>
-			<li><a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9542527&PluID=0&ord=[timestamp]">About</a></li>
+			<li><a onclick="fhd_tc('About', 'http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=20&mc=click&pli=9542527&PluID=0&ord=@Model.Timestamp')">About</a></li>
 			<li><a href="privacy.html">Privacy</a></li>
 		</ul>
 	</nav>
+
 </section>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
     if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
 </script>
-<script src="jquery.cslider.js"></script>
+<script src="/jquery.cslider.js"></script>
 <script>
     $('#da-slider').cslider({
         autoplay: true,
@@ -224,6 +228,14 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+    function fhd_tc(l, u) {
+        try{
+            _gaq.push(['_trackEvent', 'Product', 'Click', l]);
+        }catch(e)
+        {}
+        window.location.href = u;
+    }
 </script>
 </body>
 </html>

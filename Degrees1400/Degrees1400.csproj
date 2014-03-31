@@ -136,6 +136,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CuratorViewModel.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
