@@ -10,7 +10,7 @@ section article{max-width:1024px; margin:0 auto; min-height:75px; padding:2em 0;
 #logo{background:#000 url(images/stripes.png) repeat-x 0 100%; height:99px; padding-bottom:5px; position:relative; z-index:3;}
 #logo article{background:transparent; padding:0; cursor:pointer;}
 #logo article a.qclogo{width:126px; height:88px; display:block; margin:0 auto -21px; padding-top:2.0em;}
-#logo article a.qclogo img{width:100%;}
+#logo article a.qclogo img{width:100%; border:none;}
 
 #hero{background:#FFFFFF; position:relative; height:380px; z-index:2;}
 #hero article{max-width:none; padding:0;}
@@ -45,7 +45,7 @@ transition: background-position 1s ease-out 0.3s;
 #hero article#overlay a:hover{background: transparent; color: #FFFFFF;}
 
 #collection{background:#FFFFFF;}
-#collection article{background:#FFFFFF;}
+#collection article{background:#FFFFFF; padding:2em;}
 #collection article ul{list-style:none; -moz-padding-start:0; -webkit-padding-start:0; padding:0; text-align:center;}
 #collection article ul li{margin:0 6px 10px 6px; display:inline-block; width:144px; vertical-align:top;}  
 #collection article ul li a{display:block; height:auto; width:144px;}
@@ -103,7 +103,7 @@ a:hover .assemblage-book{top:75px; left:95px;}
 .theworks a:hover div.active{opacity:1;}
 
 #signup{background:#FFFFFF; padding:0;}
-#signup article{background:#FFFFFF; width:auto; height:auto;}
+#signup article{background:#FFFFFF; width:auto; height:auto; padding:2em 0.5em;}
 #signup article p{color:#4D4D4D; line-height:140%; font-weight:300;}
 #signup article p strong{color:#4D4D4D;}
 #signup article form{margin:0 auto; padding:0; width:100%; position:relative;}
@@ -133,6 +133,17 @@ a:hover .assemblage-book{top:75px; left:95px;}
 #privacy article p a{text-decoration:underline;}
 #privacy article h2{text-align:left; font-weight:300; font-size:1.35em;}
 
+.slide1 {background-image:url(images/heros/Quarterly_UAQ04_20.jpg);}
+.slide2 {background-image:url(images/heros/Quarterly_FAR05_01.jpg);}
+.slide3 {background-image:url(images/heros/PIG07_003.jpg);}
+.cameo1 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+.cameo2 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+.cameo3 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+.cameo4 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+.cameo5 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+.cameo6 a span.medallion {background-image:url(images/cameos/cameo-sprite.jpg);}
+
+
 @media (min-width: 380px) {
 #signup{padding:2em 0 0;}
 #signup article{background:#FFFFFF url(images/envelope.png) no-repeat 0 0; background-size:contain; width:24em; height:16em;}
@@ -150,8 +161,7 @@ a:hover .assemblage-book{top:75px; left:95px;}
 #hero{height:540px;}
 #hero article#overlay h1{font-size: 4em;}
 #hero article#overlay a{font-size: 2em;}
-#signup article{padding:0; height:auto;}
-#signup article{background:#FFFFFF;}
+#signup article{padding:0; height:auto; background:#FFFFFF;}
 }
 
 @media (min-width: 1000px) {

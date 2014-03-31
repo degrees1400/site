@@ -225,6 +225,8 @@
     <Content Include="images\stripes.png" />
     <Content Include="images\works-bg.jpg" />
     <Content Include="images\works-sprite.png" />
+    <Content Include="jquery-1.7.1.min.js" />
+    <Content Include="modernizr.custom.63285.js" />
     <Content Include="privacy.html" />
     <Content Include="qcdata.json" />
     <None Include="Properties\PublishProfiles\degrees1400 - FTP.pubxml" />
