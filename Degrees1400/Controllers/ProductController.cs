@@ -34,7 +34,7 @@ namespace Degrees1400.Controllers
             {
             }
 
-            string url = "http://quarterly.co/products/" + id;
+            string url = "http://quarterly.co/products/" + id + (Request.Url.Query ?? "");
             return Redirect(url);
         }
 
